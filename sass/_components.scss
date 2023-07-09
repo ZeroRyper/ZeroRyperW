@@ -1,0 +1,135 @@
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap');
+
+  @mixin btn-base{
+    padding: 0.25rem 1.5rem;
+    background-color: $color-main;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  $color-main:rgb(42,122,228) ;
+  $color-fontfamily:rgba(27, 27, 27, 0.76);
+  
+body{
+  background-color:rgb(238, 237, 237) ;
+}
+
+.lista__items{
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  align-items: start;
+  justify-content: flex-end;
+  background-color: aliceblue;
+  height: 8rem;
+  width: 8rem;
+  padding: 1rem 1rem;
+  margin: auto 0.5%;
+  svg{
+    margin-bottom: 0.5rem;
+  }
+}
+.cabeza__menu{
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 6rem ;
+    ul{
+      display: flex;
+      li{
+        margin-right: 2rem;
+        a{
+          transition: all 0.25s ease-in-out 0s;
+        &:hover{
+        color: #000;
+        font-weight: 700;
+      }
+        }
+      } 
+   
+}
+}
+
+a{
+  font-size: 1rem;
+  text-decoration: none;
+  color: $color-fontfamily;
+  transition: all 0.25s ease-in-out 0s;
+  &:hover{
+  color: #000;
+  font-weight: 700;
+}
+}
+.link-mail{
+  color: #000;
+  font-weight: 600;
+}
+.perfil__img{
+  display: flex;
+  justify-content:space-between;
+  width: 30%;
+  height: 50%;
+  border-radius: 80%;
+}
+.btn_submit{
+  margin-top: 1rem;
+  align-self: self-start;
+  height: 3rem;
+  @include btn-base();
+  transition: 0.30s;
+
+
+  &:hover{
+    background-color:rgb(234,242,253);
+    color: $color-main;
+    border:solid 1px $color-main;
+
+  }
+}
+
+.btn-repos{
+  margin-top: 1rem;
+  align-self: self-start;
+  height: 3rem;
+  width: 7rem;
+  color: $color-main;
+  border: solid $color-main 1px;
+  cursor: pointer;
+  transition: 0.30s;
+  &:hover{
+    background-color: $color-main;
+    color: rgb(238, 237, 237);
+  }
+}
+.btn-demo{
+  margin-top: 1rem;
+  align-self: self-start;
+  height: 3rem;
+  width: 7rem;
+  transition: 0.30s;
+
+  @include btn-base(); 
+  &:hover{
+    background-color:rgb(238, 237, 237);
+    color: $color-main;
+    border:solid 1px $color-main;
+  }
+}
+
+  .sec-experiencia__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin:auto 2.3rem;
+    h3{
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+  
+   
+  }
+  .sec-experiencia__img{
+    width: 50%;
+  }
+ 

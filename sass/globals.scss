@@ -1,0 +1,430 @@
+@use "components";
+html{
+  font-family: sans-serif;
+
+}
+.sec-referencias{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 2rem auto;
+  article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 4rem;
+    ul{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+  }
+  h2{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+
+  }
+}
+
+.presentacion__saludo{
+  display: flex;
+  margin: 6rem 6rem 2rem 6rem ;
+  justify-content: space-evenly;
+
+  .saludo__container{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    
+    h1{
+      font-size: 3rem;
+      font-weight: 700;
+
+    }
+    p{
+      margin-top:2rem;
+      font-size: 1.5rem;
+
+
+    }
+    .saludo__lista{
+      display: flex;
+      .lista__item-saludo{
+        margin:2rem 2rem auto auto;
+        a{
+          display: flex;
+          align-items: center;
+
+
+        }
+      }
+    }
+  }
+  .presentacion__img-perfil{
+    display: flex;
+
+  }
+}
+.presentacion__sobremi{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+  height: 25rem;
+  background-color: rgb(234,242,253);
+  
+  h2{
+    margin: 4rem 6rem 0 6rem;
+    font-size:2rem ;
+    font-weight: bold;
+  }
+  p{
+    width: 45%;
+    margin: 1rem 6rem 0 6rem;
+  }
+  img{
+    margin: 2rem 6rem 0 6rem;
+    width: 10rem;
+  }
+
+}
+//
+.sec-formacion{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color:rgb(234,242,253) ;
+  height: 100%;
+  width: 100%;
+  padding: 2rem 0;
+  h2{
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: bolder;
+}
+}
+.formacion__academica{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.formacion__span {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  img{
+    width: 250px;
+    height: 250px;
+    margin-bottom: 0.1rem;
+  }
+  h3{
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+  }
+  p{
+    font-size: 1rem;
+  }
+  
+}
+//
+.sec-experiencia{
+  margin: 6rem auto;
+
+  h3{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .sec-experiencia__encriptador{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  .sec-experiencia__petshop{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    margin-top: 2rem;
+  }
+}
+//
+.sec-contacto__formulario{
+  width: 100%;
+  h3{
+    font-weight: 600;
+    font-size: 2rem;
+  }
+}
+.input-container {
+  font-weight: var(--font-weigth-input);
+  position: relative;
+  margin-top: 2rem;
+  .input {
+    box-sizing: border-box;
+    padding: 1.375rem 0.5rem 0.5rem;
+    height: 3.25rem;
+    width: 100%;
+    
+  }
+  .input::placeholder {
+    visibility: hidden;
+    color: #00000000;
+  }
+  
+  .input:focus {
+    outline: none;
+  }
+  .input-label {
+    color: #bcbcbc;
+    position: absolute;
+    top: 1.375rem;
+    left: 0.5rem;
+    font-size: var(--font-size-input-label);
+    transition: all 0.25s;
+  }
+  .input:not(:placeholder-shown) + .input-label,
+  .input:focus + .input-label {
+    font-size: 0.875rem;
+    top: 0.25rem;
+    transition: all 0.25s;
+    color: rgb(0, 157, 255);
+  }
+
+}
+
+#textarea-mensaje{
+  height: 10rem;
+  resize: none;
+}
+//
+.sec-contacto{
+  display: flex;
+  justify-content: center;
+  padding: 7rem 10rem;
+  background-color: rgb(234,242,253);
+  img{
+    margin-right: 1rem;
+  }
+  }
+  //
+footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+ }
+ @media screen and (max-width:768px) {
+  .cabeza__menu{
+    margin: 2rem 0 2rem 4rem;
+  }
+  .lista__item-nav{
+    display: none; 
+  }
+  .link-mail{
+    display: flex;
+  }
+  .presentacion__saludo{
+  
+    .saludo__container{  
+      h1{
+        font-size: 1.4rem;
+        font-weight: 700;
+  
+      }
+      p{
+        margin-top:1rem;
+        font-size: 1rem;
+  
+  
+      }
+      .saludo__lista{
+        .lista__item-saludo{
+          margin:2rem 2rem auto auto;
+          a{
+            display: flex;
+            align-items: center;
+            font-size: 1rem;
+  
+          }
+          svg{
+            width: 1.5rem;
+            margin-left: 0.3rem;
+          }
+        }
+      }
+    }
+    .presentacion__img-perfil{
+      display: flex;
+  
+    }
+
+  }
+  .presentacion__sobremi{
+    h2{
+      margin: 4rem 6rem 0 4rem;
+      font-size: 2rem;
+    }
+    p{
+      width: 90%;
+      margin: 1rem 6rem 0 4rem;
+    }
+    img{
+      margin: 2rem 6rem 0 4rem;
+    }
+  }
+  .sec-referencias{
+    article{
+      display: flex;
+      flex-wrap: wrap;
+      ul{
+        flex-wrap: wrap;
+        .lista__items{
+          width: 25%;
+          height: 5rem;
+          margin: 1% 1%;
+        }
+      }
+    }
+  }
+  .sec-formacion{
+    height: 100%;
+    .formacion__span {
+      display: flex;
+      flex-direction: column;
+      text-align: start;
+      img{
+        width: 230px;
+        height: 150px;
+      }
+      h3{
+        margin-top: 0.5rem;
+        font-size: 0.9rem;
+      }
+      p{
+        margin-top: 0.5rem;
+        font-size: 0.9rem;
+      }
+      
+    }
+  }
+  
+.sec-experiencia{
+margin: 2rem auto;  
+h3{
+  font-size: 1.5rem;
+}
+.sec-experiencia__encriptador,.sec-experiencia__petshop{
+    display: flex;
+    flex-direction: column;
+    .sec-experiencia__img{
+      width: 90%;
+      margin: 1rem 5%;
+    }
+    .sec-experiencia__container{
+      h3{
+      font-size: 1rem;
+      }
+      p{
+        font-size: 0.8rem;
+      }
+    }
+    
+  }
+}
+.sec-contacto{
+  padding: 2.1rem;
+  .sec-contacto__img{
+    display: none;
+  }
+
+  .btn_submit{
+    height: 2.3rem;
+  }
+  
+}
+ }
+ @media screen and (max-width:426px) {
+
+  .cabeza__menu{
+    margin: 1rem 0.5rem 0 0.5rem;
+
+  }
+
+  .presentacion__saludo{
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0 1rem;
+    margin: 2rem auto 1rem auto;
+    .saludo__container{
+      .saludo__lista{
+        .lista__item-saludo{    
+          margin: 1rem 0.5rem 0.5rem auto;
+        svg{
+          margin-left: 0;
+        }
+          
+        }
+      }
+     
+    }
+    .perfil__img{
+      margin-bottom: 2rem;
+    }
+  }
+  .presentacion__sobremi{
+    img{
+      margin: 1rem 6rem 0 1rem;
+    }
+    h2{
+      margin: 0 1rem;
+    }
+    p{
+      margin: 1rem 1rem;
+    }
+  }
+  .sec-referencias{
+    article{
+      display: flex;
+      flex-wrap: wrap;
+      ul{
+        flex-wrap: wrap;
+        .lista__items{
+          width: 35%;
+          height: 5rem;
+          margin: 1% 1%;
+        }
+      }
+    }
+  }
+  .sec-formacion{
+    .formacion__academica{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .formacion__span{
+        margin: 1rem 0;
+        img{
+          width: 300px;
+          height: 180px;
+        }
+      }
+    }
+    h2{
+      margin: 3rem 2rem;
+    }
+  }
+  .sec-contacto{
+    .sec-contacto__formulario{
+      h3{
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+ }

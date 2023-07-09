@@ -1,0 +1,507 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap");
+body {
+  background-color: rgb(238, 237, 237);
+}
+
+.lista__items {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  align-items: start;
+  justify-content: flex-end;
+  background-color: aliceblue;
+  height: 8rem;
+  width: 8rem;
+  padding: 1rem 1rem;
+  margin: auto 0.5%;
+}
+.lista__items svg {
+  margin-bottom: 0.5rem;
+}
+
+.cabeza__menu {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 6rem;
+}
+.cabeza__menu ul {
+  display: flex;
+}
+.cabeza__menu ul li {
+  margin-right: 2rem;
+}
+.cabeza__menu ul li a {
+  transition: all 0.25s ease-in-out 0s;
+}
+.cabeza__menu ul li a:hover {
+  color: #000;
+  font-weight: 700;
+}
+
+a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: rgba(27, 27, 27, 0.76);
+  transition: all 0.25s ease-in-out 0s;
+}
+a:hover {
+  color: #000;
+  font-weight: 700;
+}
+
+.link-mail {
+  color: #000;
+  font-weight: 600;
+}
+
+.perfil__img {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  height: 50%;
+  border-radius: 80%;
+}
+
+.btn_submit {
+  margin-top: 1rem;
+  align-self: self-start;
+  height: 3rem;
+  padding: 0.25rem 1.5rem;
+  background-color: rgb(42, 122, 228);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn_submit:hover {
+  background-color: rgb(234, 242, 253);
+  color: rgb(42, 122, 228);
+  border: solid 1px rgb(42, 122, 228);
+}
+
+.btn-repos {
+  margin-top: 1rem;
+  align-self: self-start;
+  height: 3rem;
+  width: 7rem;
+  color: rgb(42, 122, 228);
+  border: solid rgb(42, 122, 228) 1px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn-repos:hover {
+  background-color: rgb(42, 122, 228);
+  color: rgb(238, 237, 237);
+}
+
+.btn-demo {
+  margin-top: 1rem;
+  align-self: self-start;
+  height: 3rem;
+  width: 7rem;
+  transition: 0.3s;
+  padding: 0.25rem 1.5rem;
+  background-color: rgb(42, 122, 228);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.btn-demo:hover {
+  background-color: rgb(238, 237, 237);
+  color: rgb(42, 122, 228);
+  border: solid 1px rgb(42, 122, 228);
+}
+
+.sec-experiencia__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin: auto 2.3rem;
+}
+.sec-experiencia__container h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.sec-experiencia__img {
+  width: 50%;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+.sec-referencias {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 2rem auto;
+}
+.sec-referencias article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.sec-referencias article ul {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.sec-referencias h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.presentacion__saludo {
+  display: flex;
+  margin: 6rem 6rem 2rem 6rem;
+  justify-content: space-evenly;
+}
+.presentacion__saludo .saludo__container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.presentacion__saludo .saludo__container h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.presentacion__saludo .saludo__container p {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+.presentacion__saludo .saludo__container .saludo__lista {
+  display: flex;
+}
+.presentacion__saludo .saludo__container .saludo__lista .lista__item-saludo {
+  margin: 2rem 2rem auto auto;
+}
+.presentacion__saludo .saludo__container .saludo__lista .lista__item-saludo a {
+  display: flex;
+  align-items: center;
+}
+.presentacion__saludo .presentacion__img-perfil {
+  display: flex;
+}
+
+.presentacion__sobremi {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+  height: 25rem;
+  background-color: rgb(234, 242, 253);
+}
+.presentacion__sobremi h2 {
+  margin: 4rem 6rem 0 6rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.presentacion__sobremi p {
+  width: 45%;
+  margin: 1rem 6rem 0 6rem;
+}
+.presentacion__sobremi img {
+  margin: 2rem 6rem 0 6rem;
+  width: 10rem;
+}
+
+.sec-formacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(234, 242, 253);
+  height: 100%;
+  width: 100%;
+  padding: 2rem 0;
+}
+.sec-formacion h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: bolder;
+}
+
+.formacion__academica {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.formacion__span {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+.formacion__span img {
+  width: 250px;
+  height: 250px;
+  margin-bottom: 0.1rem;
+}
+.formacion__span h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+.formacion__span p {
+  font-size: 1rem;
+}
+
+.sec-experiencia {
+  margin: 6rem auto;
+}
+.sec-experiencia h3 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.sec-experiencia .sec-experiencia__encriptador {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.sec-experiencia .sec-experiencia__petshop {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  margin-top: 2rem;
+}
+
+.sec-contacto__formulario {
+  width: 100%;
+}
+.sec-contacto__formulario h3 {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.input-container {
+  font-weight: var(--font-weigth-input);
+  position: relative;
+  margin-top: 2rem;
+}
+.input-container .input {
+  box-sizing: border-box;
+  padding: 1.375rem 0.5rem 0.5rem;
+  height: 3.25rem;
+  width: 100%;
+}
+.input-container .input::placeholder {
+  visibility: hidden;
+  color: rgba(0, 0, 0, 0);
+}
+.input-container .input:focus {
+  outline: none;
+}
+.input-container .input-label {
+  color: #bcbcbc;
+  position: absolute;
+  top: 1.375rem;
+  left: 0.5rem;
+  font-size: var(--font-size-input-label);
+  transition: all 0.25s;
+}
+.input-container .input:not(:placeholder-shown) + .input-label,
+.input-container .input:focus + .input-label {
+  font-size: 0.875rem;
+  top: 0.25rem;
+  transition: all 0.25s;
+  color: rgb(0, 157, 255);
+}
+
+#textarea-mensaje {
+  height: 10rem;
+  resize: none;
+}
+
+.sec-contacto {
+  display: flex;
+  justify-content: center;
+  padding: 7rem 10rem;
+  background-color: rgb(234, 242, 253);
+}
+.sec-contacto img {
+  margin-right: 1rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .cabeza__menu {
+    margin: 2rem 0 2rem 4rem;
+  }
+  .lista__item-nav {
+    display: none;
+  }
+  .link-mail {
+    display: flex;
+  }
+  .presentacion__saludo .saludo__container h1 {
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+  .presentacion__saludo .saludo__container p {
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+  .presentacion__saludo .saludo__container .saludo__lista .lista__item-saludo {
+    margin: 2rem 2rem auto auto;
+  }
+  .presentacion__saludo .saludo__container .saludo__lista .lista__item-saludo a {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+  }
+  .presentacion__saludo .saludo__container .saludo__lista .lista__item-saludo svg {
+    width: 1.5rem;
+    margin-left: 0.3rem;
+  }
+  .presentacion__saludo .presentacion__img-perfil {
+    display: flex;
+  }
+  .presentacion__sobremi h2 {
+    margin: 4rem 6rem 0 4rem;
+    font-size: 2rem;
+  }
+  .presentacion__sobremi p {
+    width: 90%;
+    margin: 1rem 6rem 0 4rem;
+  }
+  .presentacion__sobremi img {
+    margin: 2rem 6rem 0 4rem;
+  }
+  .sec-referencias article {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .sec-referencias article ul {
+    flex-wrap: wrap;
+  }
+  .sec-referencias article ul .lista__items {
+    width: 25%;
+    height: 5rem;
+    margin: 1% 1%;
+  }
+  .sec-formacion {
+    height: 100%;
+  }
+  .sec-formacion .formacion__span {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+  }
+  .sec-formacion .formacion__span img {
+    width: 230px;
+    height: 150px;
+  }
+  .sec-formacion .formacion__span h3 {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+  }
+  .sec-formacion .formacion__span p {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+  }
+  .sec-experiencia {
+    margin: 2rem auto;
+  }
+  .sec-experiencia h3 {
+    font-size: 1.5rem;
+  }
+  .sec-experiencia .sec-experiencia__encriptador, .sec-experiencia .sec-experiencia__petshop {
+    display: flex;
+    flex-direction: column;
+  }
+  .sec-experiencia .sec-experiencia__encriptador .sec-experiencia__img, .sec-experiencia .sec-experiencia__petshop .sec-experiencia__img {
+    width: 90%;
+    margin: 1rem 5%;
+  }
+  .sec-experiencia .sec-experiencia__encriptador .sec-experiencia__container h3, .sec-experiencia .sec-experiencia__petshop .sec-experiencia__container h3 {
+    font-size: 1rem;
+  }
+  .sec-experiencia .sec-experiencia__encriptador .sec-experiencia__container p, .sec-experiencia .sec-experiencia__petshop .sec-experiencia__container p {
+    font-size: 0.8rem;
+  }
+  .sec-contacto {
+    padding: 2.1rem;
+  }
+  .sec-contacto .sec-contacto__img {
+    display: none;
+  }
+  .sec-contacto .btn_submit {
+    height: 2.3rem;
+  }
+}
+@media screen and (max-width: 426px) {
+  .cabeza__menu {
+    margin: 1rem 0.5rem 0 0.5rem;
+  }
+  .presentacion__saludo {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0 1rem;
+    margin: 2rem auto 1rem auto;
+  }
+  .presentacion__saludo .saludo__container .saludo__lista .lista__item-saludo {
+    margin: 1rem 0.5rem 0.5rem auto;
+  }
+  .presentacion__saludo .saludo__container .saludo__lista .lista__item-saludo svg {
+    margin-left: 0;
+  }
+  .presentacion__saludo .perfil__img {
+    margin-bottom: 2rem;
+  }
+  .presentacion__sobremi img {
+    margin: 1rem 6rem 0 1rem;
+  }
+  .presentacion__sobremi h2 {
+    margin: 0 1rem;
+  }
+  .presentacion__sobremi p {
+    margin: 1rem 1rem;
+  }
+  .sec-referencias article {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .sec-referencias article ul {
+    flex-wrap: wrap;
+  }
+  .sec-referencias article ul .lista__items {
+    width: 35%;
+    height: 5rem;
+    margin: 1% 1%;
+  }
+  .sec-formacion .formacion__academica {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sec-formacion .formacion__academica .formacion__span {
+    margin: 1rem 0;
+  }
+  .sec-formacion .formacion__academica .formacion__span img {
+    width: 300px;
+    height: 180px;
+  }
+  .sec-formacion h2 {
+    margin: 3rem 2rem;
+  }
+  .sec-contacto .sec-contacto__formulario h3 {
+    font-size: 1.5rem;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
