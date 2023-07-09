@@ -1,7 +1,7 @@
 document.getElementById("miFormulario").addEventListener("submit", function(event) {
     event.preventDefault();
 const sgMail = require('@sendgrid/mail');
-const API_KEY = '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';
+const API_KEY = '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';
 sgMail.setApiKey(API_KEY);
 
 var nombre = document.getElementById('nombre').value;
