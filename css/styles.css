@@ -74,9 +74,18 @@ a:hover {
   transition: 0.3s;
 }
 .btn_submit:hover {
-  background-color: rgb(234, 242, 253);
+  background-color: rgb(3, 66, 155);
   color: rgb(42, 122, 228);
   border: solid 1px rgb(42, 122, 228);
+}
+.btn_submit:disabled {
+  background-color: #006ef5;
+  cursor: not-allowed;
+}
+.btn_submit:disabled:hover {
+  color: rgb(255, 250, 250);
+  background-color: rgb(255, 0, 0);
+  border: solid 1px rgb(255, 0, 0);
 }
 
 .btn-repos {
@@ -133,6 +142,59 @@ html {
   font-family: sans-serif;
 }
 
+.sec-presentacion .presentacion__saludo {
+  display: flex;
+  margin: 6rem 6rem 2rem 6rem;
+  justify-content: space-evenly;
+}
+.sec-presentacion .presentacion__saludo .saludo__container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.sec-presentacion .presentacion__saludo .saludo__container h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.sec-presentacion .presentacion__saludo .saludo__container p {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+.sec-presentacion .presentacion__saludo .saludo__container .saludo__lista {
+  display: flex;
+}
+.sec-presentacion .presentacion__saludo .saludo__container .saludo__lista .lista__item-saludo {
+  margin: 2rem 2rem auto auto;
+}
+.sec-presentacion .presentacion__saludo .saludo__container .saludo__lista .lista__item-saludo a {
+  display: flex;
+  align-items: center;
+}
+.sec-presentacion .presentacion__saludo .presentacion__img-perfil {
+  display: flex;
+}
+.sec-presentacion .presentacion__sobremi {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+  height: 25rem;
+  background-color: rgb(234, 242, 253);
+}
+.sec-presentacion .presentacion__sobremi h2 {
+  margin: 4rem 6rem 0 6rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.sec-presentacion .presentacion__sobremi p {
+  width: 45%;
+  margin: 1rem 6rem 0 6rem;
+}
+.sec-presentacion .presentacion__sobremi img {
+  margin: 2rem 6rem 0 6rem;
+  width: 10rem;
+}
+
 .sec-referencias {
   display: flex;
   flex-direction: column;
@@ -157,60 +219,6 @@ html {
   margin-bottom: 1rem;
 }
 
-.presentacion__saludo {
-  display: flex;
-  margin: 6rem 6rem 2rem 6rem;
-  justify-content: space-evenly;
-}
-.presentacion__saludo .saludo__container {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-}
-.presentacion__saludo .saludo__container h1 {
-  font-size: 3rem;
-  font-weight: 700;
-}
-.presentacion__saludo .saludo__container p {
-  margin-top: 2rem;
-  font-size: 1.5rem;
-}
-.presentacion__saludo .saludo__container .saludo__lista {
-  display: flex;
-}
-.presentacion__saludo .saludo__container .saludo__lista .lista__item-saludo {
-  margin: 2rem 2rem auto auto;
-}
-.presentacion__saludo .saludo__container .saludo__lista .lista__item-saludo a {
-  display: flex;
-  align-items: center;
-}
-.presentacion__saludo .presentacion__img-perfil {
-  display: flex;
-}
-
-.presentacion__sobremi {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  width: 100%;
-  height: 25rem;
-  background-color: rgb(234, 242, 253);
-}
-.presentacion__sobremi h2 {
-  margin: 4rem 6rem 0 6rem;
-  font-size: 2rem;
-  font-weight: bold;
-}
-.presentacion__sobremi p {
-  width: 45%;
-  margin: 1rem 6rem 0 6rem;
-}
-.presentacion__sobremi img {
-  margin: 2rem 6rem 0 6rem;
-  width: 10rem;
-}
-
 .sec-formacion {
   display: flex;
   flex-direction: column;
@@ -225,29 +233,27 @@ html {
   margin-bottom: 2rem;
   font-weight: bolder;
 }
-
-.formacion__academica {
+.sec-formacion .formacion__academica {
   display: flex;
   justify-content: space-around;
   width: 100%;
 }
-
-.formacion__span {
+.sec-formacion .formacion__academica .formacion__span {
   display: flex;
   flex-direction: column;
   text-align: start;
 }
-.formacion__span img {
+.sec-formacion .formacion__academica .formacion__span img {
   width: 250px;
   height: 250px;
   margin-bottom: 0.1rem;
 }
-.formacion__span h3 {
+.sec-formacion .formacion__academica .formacion__span h3 {
   font-size: 1rem;
   font-weight: 700;
   margin-top: 0.5rem;
 }
-.formacion__span p {
+.sec-formacion .formacion__academica .formacion__span p {
   font-size: 1rem;
 }
 
@@ -271,53 +277,6 @@ html {
   margin-top: 2rem;
 }
 
-.sec-contacto__formulario {
-  width: 100%;
-}
-.sec-contacto__formulario h3 {
-  font-weight: 600;
-  font-size: 2rem;
-}
-
-.input-container {
-  font-weight: var(--font-weigth-input);
-  position: relative;
-  margin-top: 2rem;
-}
-.input-container .input {
-  box-sizing: border-box;
-  padding: 1.375rem 0.5rem 0.5rem;
-  height: 3.25rem;
-  width: 100%;
-}
-.input-container .input::placeholder {
-  visibility: hidden;
-  color: rgba(0, 0, 0, 0);
-}
-.input-container .input:focus {
-  outline: none;
-}
-.input-container .input-label {
-  color: #bcbcbc;
-  position: absolute;
-  top: 1.375rem;
-  left: 0.5rem;
-  font-size: var(--font-size-input-label);
-  transition: all 0.25s;
-}
-.input-container .input:not(:placeholder-shown) + .input-label,
-.input-container .input:focus + .input-label {
-  font-size: 0.875rem;
-  top: 0.25rem;
-  transition: all 0.25s;
-  color: rgb(0, 157, 255);
-}
-
-#textarea-mensaje {
-  height: 10rem;
-  resize: none;
-}
-
 .sec-contacto {
   display: flex;
   justify-content: center;
@@ -326,6 +285,79 @@ html {
 }
 .sec-contacto img {
   margin-right: 1rem;
+}
+.sec-contacto .sec-contacto__formulario {
+  width: 100%;
+}
+.sec-contacto .sec-contacto__formulario h3 {
+  font-weight: 600;
+  font-size: 2rem;
+}
+.sec-contacto p {
+  margin-bottom: 2rem;
+}
+.sec-contacto .formulario {
+  margin-top: 2rem;
+}
+.sec-contacto .input-container {
+  position: relative;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-sizing: border-box;
+}
+.sec-contacto .input-container .input {
+  box-sizing: border-box;
+  border: none;
+  border-radius: 1rem;
+  padding: 1.375rem 0.5rem 0.5rem;
+  height: 3.25rem;
+  width: 100%;
+  background-color: #fff;
+}
+.sec-contacto .input-container .input::placeholder {
+  visibility: hidden;
+  color: rgba(0, 0, 0, 0);
+}
+.sec-contacto .input-container .input:focus {
+  outline: none;
+}
+.sec-contacto .input-container .input-label {
+  position: absolute;
+  top: 1.375rem;
+  left: 0.5rem;
+  font-size: var(--font-size-input-label);
+  transition: all 0.25s;
+}
+.sec-contacto .input-container .input:not(:placeholder-shown) + .input-label,
+.sec-contacto .input-container .input:focus + .input-label {
+  font-size: 0.875rem;
+  top: 0.25rem;
+  transition: all 0.25s;
+}
+.sec-contacto .input-container .input-container--invalid {
+  margin-bottom: 0.5rem;
+}
+.sec-contacto .input-container .input-container--invalid .input {
+  border: 1px solid #ff0000;
+  border-radius: 7px;
+}
+.sec-contacto .input-container .input-message-error {
+  display: none;
+}
+.sec-contacto .input-container #textarea-mensaje {
+  height: 10rem;
+  resize: none;
+}
+.sec-contacto .input-container--invalid .input-label {
+  color: #ff0000;
+}
+.sec-contacto .input-container--invalid .input-message-error {
+  color: #ff0000;
+  display: block;
+  margin-top: 0.5rem;
+  padding-left: 0.5rem;
 }
 
 footer {
@@ -342,44 +374,44 @@ footer {
   .cabeza__menu {
     margin: 2rem 0 2rem 4rem;
   }
-  .lista__item-nav {
+  .cabeza__menu .lista__item-nav {
     display: none;
   }
-  .link-mail {
+  .cabeza__menu .link-mail {
     display: flex;
   }
-  .presentacion__saludo .saludo__container h1 {
+  .sec-presentacion .presentacion__saludo .saludo__container h1 {
     font-size: 1.4rem;
     font-weight: 700;
   }
-  .presentacion__saludo .saludo__container p {
+  .sec-presentacion .presentacion__saludo .saludo__container p {
     margin-top: 1rem;
     font-size: 1rem;
   }
-  .presentacion__saludo .saludo__container .saludo__lista .lista__item-saludo {
+  .sec-presentacion .presentacion__saludo .saludo__container .saludo__lista .lista__item-saludo {
     margin: 2rem 2rem auto auto;
   }
-  .presentacion__saludo .saludo__container .saludo__lista .lista__item-saludo a {
+  .sec-presentacion .presentacion__saludo .saludo__container .saludo__lista .lista__item-saludo a {
     display: flex;
     align-items: center;
     font-size: 1rem;
   }
-  .presentacion__saludo .saludo__container .saludo__lista .lista__item-saludo svg {
+  .sec-presentacion .presentacion__saludo .saludo__container .saludo__lista .lista__item-saludo svg {
     width: 1.5rem;
     margin-left: 0.3rem;
   }
-  .presentacion__saludo .presentacion__img-perfil {
+  .sec-presentacion .presentacion__saludo .presentacion__img-perfil {
     display: flex;
   }
-  .presentacion__sobremi h2 {
+  .sec-presentacion .presentacion__sobremi h2 {
     margin: 4rem 6rem 0 4rem;
     font-size: 2rem;
   }
-  .presentacion__sobremi p {
+  .sec-presentacion .presentacion__sobremi p {
     width: 90%;
     margin: 1rem 6rem 0 4rem;
   }
-  .presentacion__sobremi img {
+  .sec-presentacion .presentacion__sobremi img {
     margin: 2rem 6rem 0 4rem;
   }
   .sec-referencias article {
@@ -448,28 +480,28 @@ footer {
   .cabeza__menu {
     margin: 1rem 0.5rem 0 0.5rem;
   }
-  .presentacion__saludo {
+  .sec-presentacion .presentacion__saludo {
     display: flex;
     flex-direction: column-reverse;
     padding: 0 1rem;
     margin: 2rem auto 1rem auto;
   }
-  .presentacion__saludo .saludo__container .saludo__lista .lista__item-saludo {
+  .sec-presentacion .presentacion__saludo .saludo__container .saludo__lista .lista__item-saludo {
     margin: 1rem 0.5rem 0.5rem auto;
   }
-  .presentacion__saludo .saludo__container .saludo__lista .lista__item-saludo svg {
+  .sec-presentacion .presentacion__saludo .saludo__container .saludo__lista .lista__item-saludo svg {
     margin-left: 0;
   }
-  .presentacion__saludo .perfil__img {
+  .sec-presentacion .presentacion__saludo .perfil__img {
     margin-bottom: 2rem;
   }
-  .presentacion__sobremi img {
+  .sec-presentacion .presentacion__sobremi img {
     margin: 1rem 6rem 0 1rem;
   }
-  .presentacion__sobremi h2 {
+  .sec-presentacion .presentacion__sobremi h2 {
     margin: 0 1rem;
   }
-  .presentacion__sobremi p {
+  .sec-presentacion .presentacion__sobremi p {
     margin: 1rem 1rem;
   }
   .sec-referencias article {
@@ -501,6 +533,9 @@ footer {
   }
   .sec-contacto .sec-contacto__formulario h3 {
     font-size: 1.5rem;
+  }
+  .sec-contacto .sec-contacto__formulario .formulario {
+    margin-top: 2rem;
   }
 }
 

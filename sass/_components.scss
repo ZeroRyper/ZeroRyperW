@@ -76,13 +76,19 @@ a{
   height: 3rem;
   @include btn-base();
   transition: 0.30s;
-
-
   &:hover{
-    background-color:rgb(234,242,253);
+    background-color:rgb(3, 66, 155);
     color: $color-main;
     border:solid 1px $color-main;
-
+  }
+  &:disabled{
+    background-color: #006ef5;
+    cursor: not-allowed;
+    &:hover{
+      color: rgb(255, 250, 250);
+      background-color:rgb(255, 0, 0) ;
+      border:solid 1px rgb(255, 0, 0);
+    }
   }
 }
 

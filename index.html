@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="shortcut icon" href="./assets/ZR-icon.ico" type="image/x-icon">
-    <script src="https://cdn.jsdelivr.net/npm/@sendgrid/mail@7.4.0"></script>
 
 
 
@@ -331,25 +330,29 @@
             </p>
 
             <div class="input-container">
-                <input name="nombre" id="nombre" class="input" type="text" placeholder="Nombre" required data-tipo="nombre">
+                <input name="nombre" id="nombre" class="input" type="text" placeholder="Nombre"  data-tipo="nombre" maxlength="50" minlength="5" required>
                 <label class="input-label" for="nombre">Nombre</label>
+                <span class="input-message-error">Este campo no es valido</span>
             </div>
             <div class="input-container">
                 <input name="email" id="email" class="input" type="email" placeholder="Email" required
                     data-tipo="email">
                 <label class="input-label" for="email">Email</label>
+                <span class="input-message-error">Este campo no es valido</span>
+
             </div>
             <div class="input-container">
-                <input name="asunto" id="asunto" class="input" type="text" placeholder="Asunto" required
-                    data-tipo="asunto">
+                <input name="asunto" id="asunto" class="input" type="text" placeholder="Asunto" data-tipo="asunto" maxlength="50" minlength="5" required
+                    >
                 <label class="input-label" for="asunto">Asunto</label>
+                <span class="input-message-error">Este campo no es valido</span>
             </div>
             <div class="input-container">
-                <textarea name="mensaje" class="input" id="textarea-mensaje" required data-tipo="mensaje"
-                    placeholder="Mensaje"></textarea>
+                <textarea  class="input" rows="5" cols="40" id="textarea-mensaje" name="mensaje" placeholder="Mensaje" data-tipo="mensaje" minlength="10" maxlength="300" required></textarea>
                 <label class="input-label" for="mensaje">Mensaje</label>
+                <span class="input-message-error">Este campo no es valido</span>
             </div>
-            <button class="btn_submit" type="submit" value="enviar">Enviar mensaje</button>
+            <button id="btn_submit" class="btn_submit" type="submit" disabled>Enviar mensaje</button>
 
         </form>
     </section>
